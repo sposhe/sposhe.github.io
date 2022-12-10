@@ -1,0 +1,289 @@
+:root {
+  %sans-serif;
+}
+main {
+  %pa4;
+  %pa5-ns;
+}
+h1, h2, h3, h4, h5, h6, li, dt, dd, p {
+  %f4;
+  %f5-ns;
+  %measure;
+  %tracked-slight;
+}
+h2, h3, h4, h5, h6 {
+  %ttl;
+}
+li, dd, p, figcaption {
+  %fw3;
+}
+dt {
+  %fw7;
+}
+ul, ol, dl {
+  %list;
+}
+ul {
+  %pl0;
+}
+dd {
+  %ml0;
+}
+a {
+  %black;
+  %a;
+}
+figcaption {
+  %f5;
+  %i;
+  %lh-25;
+  %tracked-slight;
+}
+abbr:not(.normal) {
+  %ttl;
+  %sc;
+}
+img {
+  %h-auto;
+}
+
+
+
+header.home {
+  %relative;
+  h1 {
+    %mv0;
+    %f-hero;
+    %pv5;
+    %pv6-ns;
+    %mw7-ns;
+    %mw8-l;
+    span.name {
+      %absolute;
+      %top-0;
+      %f4;
+      %fw4;
+      %tracked-slight;
+      %f5-ns;
+    }
+  }
+  ul {
+  }
+  li {
+  }
+  p {
+  }
+}
+
+
+.section {
+  %relative;
+  %bt;
+  %pt2;
+  %mv5;
+  %pb4;
+  %pt3-ns;
+  %flex-l;
+  header + & {
+    %mt6;
+    %mt5-ns;
+  }
+  h2 {
+    %absolute;
+    %lh-copy;
+    %top--1;
+    %pr2;
+    %ma0;
+    %bg-white;
+    %pr0-l;
+    %relative-l;
+    %w-25-l;
+    %mv3-l;
+    %w-20-xl;
+  }
+  .section-content {
+    %w-75-l;
+    %w-80-xl;
+  }
+}
+
+
+
+.subsection {
+  %mv4;
+  %mt3-l;
+  %flex-ns;
+  %pb4-l;
+  %mb0-l;
+  &:not(:first-child) {
+    %mv0-l;
+    %bt-l;
+    %pt4-l;
+  }
+  h3 {
+    %lh-copy;
+    %mv0;
+    %w-50-ns;
+    %w-third-l;
+    %w-25-xl;
+  }
+  .subsection-content {
+    %pl3;
+    %pl0-ns;
+    %w-50-ns;
+    %w-two-thirds-l;
+    %w-75-xl;
+  }
+}
+
+.lists .subsection-content ul {
+  %mv0;
+  %columns-2-l;
+  %columns-3-xl;
+  li {
+    %lh-copy;
+  }
+}
+
+.cards .subsection-content dl {
+  %mv0-ns;
+}
+
+.text .subsection-content p {
+  %mt0;
+  %lh-copy;
+  &:last-child {
+    %mb0-ns;
+  }
+}
+
+
+/*
+.section {
+  %relative;
+  %bt;
+  %mt6;
+  %pt3;
+  %flex-ns;
+  h2 {
+    %absolute;
+    %top--1;
+    %pr2;
+    %ma0;
+    %bg-white;
+    %pr0-ns;
+    %relative-ns;
+    %w-third-ns;
+    %mv3-ns;
+    %lh-copy-ns;
+  }
+  .section-content {
+    %w-two-thirds-ns;
+  }
+}
+
+
+
+.subsection {
+  %mv4;
+  %mv3-ns;
+  %flex-ns;
+  h3 {
+    %ma0;
+    %lh-copy;
+    %w-50-ns;
+  }
+  .subsection-content {
+    %w-50-ns;
+  }
+}
+
+.three-columns {
+  %columns-3;
+}
+
+ul.three-columns {
+  %ma0;
+  li {
+    %f5;
+    %lh-copy;
+  }
+}
+*/
+
+
+
+.card {
+  %mv3;
+  %mt0-ns;
+  &:last-child {
+    %mb0;
+  }
+  h4 {
+    %measure-wide-l;
+  }
+  dt, dd {
+    %f4;
+    %lh-copy;
+    %f5-ns;
+    %measure-wide-l;
+  }
+}
+
+/*
+.section {
+  %bt;
+  %flex;
+  %pt2;
+  %mv6;
+  %gap;
+  h2 {
+    %w-20;
+    %mv3;
+    %lh-copy;
+  }
+  .section-content {
+    %w-80;
+  }
+}
+
+
+
+.subsection {
+  %flex;
+  %gap;
+  &:first-child {
+    %pb2;
+  }
+  &:not(:first-child) {
+    %bt;
+    %pv2;
+  }
+  h3 {
+    %w-25;
+    %lh-copy;
+  }
+  .subsection-content {
+    %w-75;
+  }
+}
+
+
+
+
+
+
+
+.card {
+  %mv3;
+  %pb1;
+  dt {
+    %lh-copy;
+  }
+  dd {
+    %mt1;
+    %lh-copy;
+    %measure-wide;
+  }
+}
+*/

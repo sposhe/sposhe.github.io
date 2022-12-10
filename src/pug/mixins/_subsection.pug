@@ -1,0 +1,5 @@
+mixin subsection(heading)
+  section.subsection&attributes(attributes)
+    h3!= smallcaps(heading)
+    .subsection-content
+      block

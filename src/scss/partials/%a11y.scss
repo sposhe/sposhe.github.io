@@ -1,0 +1,22 @@
+%sr-only,
+.sr-only {
+  %absolute;
+  %pa0;
+  %bw0;
+  %overflow-hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+%sr-only-focusable,
+.sr-only-focusable {
+  &:focus {
+    %relative;
+    %w-auto;
+    %h-auto;
+    clip: initial;
+    margin: inherit;
+    border: initial;
+  }
+}

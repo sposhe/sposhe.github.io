@@ -1,0 +1,13 @@
+-
+  const abbrs = [ 'UX', 'UI', 'IA', 'ARIA', 'CSS', 'SVG', 'QA' ]
+  const smallcaps = (s) => {
+    let words = s.split(' ')
+    let output = words.map(word => {
+      if (-1 !== abbrs.indexOf(word)) {
+        return `<abbr aria-label='${word}'>${word}</abbr>`
+      } else {
+        return word
+      }
+    })
+    return output.join(' ')
+  }

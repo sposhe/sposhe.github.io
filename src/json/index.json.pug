@@ -1,0 +1,42 @@
+doctype xml
+include ../pug/mixins/_index
+root
+  - const url = 'https://seanoshea.me/'
+  entity
+    at-context http://www.schema.org
+    at-type ProfilePage
+    at-id= url + '#profilepage'
+    name Sean O'Shea: UX Designer and Strategist
+    description Sean is a UX designer, strategist, researcher, visual designer, front-end developer, and accessibility advocate with over ten years of experience.
+    url= url
+    mainEntity
+      at-type Person
+      at-id= url + '#person'
+      name Sean O'Shea
+      givenName Sean
+      url= url
+      image https://www.savaslabs.com/sites/default/files/styles/550x550/public/2020-02/sean-oshea-square-outside-350by350-05efd5.jpg
+      description UX designer, strategist, front-end developer, and accessibility advocate
+      jobTitle UX Lead
+      worksFor
+        at-type Organization
+        name Savas Labs
+        url https://savaslabs.com/
+      homeLocation
+        at-type Place
+        keywords Eastern Standard Time
+        keywords GMT-5
+      knowsAbout UX design
+      knowsAbout Accessibility
+      knowsAbout Front-end development
+      knowsAbout UI design
+      knowsAbout Design Thinking
+      knowsAbout User research
+      mainEntityOfPage= url
+      sameAs https://www.savaslabs.com/team/sean-oshea
+      sameAs https://github.com/sposhe
+      sameAs https://codepen.io/os/
+      sameAs https://stackoverflow.com/users/5351721/
+      sameAs https://figma.com/@sposhe
+      sameAs https://www.linkedin.com/in/sposhea/
+    include accessibility.json.pug

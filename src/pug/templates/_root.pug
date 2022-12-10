@@ -1,0 +1,25 @@
+doctype html
+html(lang='en-US')
+  include ../mixins/_index
+  head
+    block head
+      meta(charset='utf-8')
+      title #{title}
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content= description)
+      meta(property='og:type', content= type)
+      meta(property='og:title', content= title)
+      meta(property='og:description', content= description)
+      meta(property='og:image', content= image)
+      meta(property='og:image:alt', content= alt)
+      meta(name='twitter:card', content= card)
+      meta(name='google-site-verification', content='BYBaV_vD0YF_QKquXZMkGooqlnshU-lAQzhA4WUsn0w')
+      meta(name='msvalidate.01', content='5D8D8CB34FC4756484ADA688AE2DA811')
+      link(rel='canonical', href='https://seanoshea.me' + path)
+      link(rel='icon', href='/favicon.svg', type='image/svg+xml')
+      link(rel='stylesheet', href='/css/styles.css')
+      script(type='application/ld+json')
+        block json
+  body
+    block body

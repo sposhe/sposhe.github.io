@@ -1,0 +1,110 @@
+extends ../templates/_root
+
+prepend head
+  - const path = '/'
+  - const type = 'website'
+  - const title = 'Sean O\'Shea: UX Designer and Strategist'
+  - const description = 'Sean is a UX designer, strategist, researcher, visual designer, front-end developer, and accessibility advocate with over ten years of experience.'
+  - const image = '/og.png'
+  - const alt = 'UX designer. Strategist. Researcher. Front-end developer. Accessibility advocate. Over ten years of experience.'
+  - const card = 'summary_large_image'
+  
+append json
+  include ../../json/index.min.json
+
+append body
+  
+  main
+    
+    header.home
+      h1
+        span.name Sean O'Shea 
+        span.sr-only is a 
+        | #[abbr(aria-label='UX') UX] designer, strategist, researcher, visual designer, front-end developer, and accessibility advocate.
+
+    +section('Skills').lists
+      +subsection('Discovery and Research')
+        ul
+          li stakeholder workshops
+          li design thinking exercises
+          li spectrum polling
+          li accessibility audits
+          li heuristic evaluations
+          li analytics audits
+          li surveys and focus groups
+          li moderated user testing
+          li unmoderated user testing
+          li card-sorting
+          li navigation tree testing
+      +subsection('UX Design')
+        ul
+          li user flows and journey maps
+          li persona development
+          li sitemaps and #[abbr(aria-label='IA') IA]
+          li content and data modeling
+          li modular component systems
+          li lo-fi and hi-fi wireframes
+          li interactive prototyping
+          li functional documentation
+      +subsection('Visual Design')
+        ul
+          li visual design
+          li moodboards
+          li styleguides
+          li figma component systems
+          li atomic design systems
+          li hi-fi layouts
+          li developer documentation
+      +subsection('Front-end Development')
+        ul
+          li accessibility and #[abbr(aria-label='ARIA') ARIA]
+          li #[abbr(aria-label='HTML') HTML] and pug
+          li semantic markup
+          li #[abbr(aria-label='CSS') CSS] and sass
+          li javascript and node
+          li gulp and express
+          li #[abbr(aria-label='SVG') SVG] and canvas
+          li git and github
+          li #[abbr(aria-label='QA') QA] and accessibility
+          
+    +section('Writing and More').cards
+      +subsection('Articles')
+        dl
+          +card('How to Use Design Thinking to Spark Innovation', 'https://www.savaslabs.com/blog/how-use-design-thinking-spark-innovation')
+            | Problem-solving, innovation, and brainstorming can be hard. The tricks our brains have evolved to be more efficient can sometimes work against us. We can break those roadblocks using Design Thinking and lateral thinking methods.
+          +card('Accessible Text Alternatives for Narrative Animations', 'https://www.savaslabs.com/blog/alt-text-accessible-animations')
+            | When animations are a integral part of a site's content, how do you make that content accessible? This article outlines a technique using ARIA roles and JavaScript to provide an equal experience for users that rely on assistive tech.
+      +subsection('Figma Plugins')
+        dl
+          +card('@sposhe/voronoi', 'https://www.figma.com/community/plugin/950202611096034331/%40sposhe%2Fvoronoi')
+            | Generates Voronoi cell networks as vector shape layers within Figma from a seed frame populated with ellipses marking initial node points.
+          +card('@sposhe/poisson', 'https://www.figma.com/community/plugin/952740405797990147/%40sposhe%2Fpoisson')
+            | Creates an organically random distribution of one or more Figma elements tightly packed to fill a frame based on a Poisson algorithm. Optionally will randomly rotate each instance.
+          +card('@sposhe/reorder', 'https://www.figma.com/community/plugin/1016775617158948031')
+            | Reorders a frame's children by their X or Y position (from right to left, top to bottom, etc).
+      +subsection('Node Packages')
+        dl
+          +card('gulp-sass-extend-shorthand', 'https://www.npmjs.com/package/gulp-sass-extend-shorthand')
+            | Provides a syntactic sugar shorthand on top of Sass's @extend at-rule syntax, allowing utility classes to be efficiently referenced within more semantic class names.
+          +card('gulp-url-builder', 'https://www.npmjs.com/package/gulp-url-builder')
+            | Explodes a flat directory of files into nested directories based on a simple naming convention.
+          +card('component-indexer', 'https://www.npmjs.com/package/component-indexer')
+            | Automatically scans all files in a directory and then references them from a generated index file for easy bulk inclusion elsewhere. Ideal for Pug and Sass.
+    
+    +section('Currently').text
+      +subsection('Role')
+        p #[abbr.normal(aria-label='UX') UX] Lead at #[+externalLink('https://savaslabs.com') Savas Labs]
+      +subsection('Time Zone')
+        p Eastern Standard Time (#[abbr.normal(aria-label='GMT') GMT]-5)
+      +subsection('Elsewhere')
+        p Find me on #[+externalLink('https://github.com/sposhe') GitHub], #[+externalLink('https://www.figma.com/@sposhe') Figma], #[+externalLink('https://codepen.io/os/') CodePen], #[+externalLink('https://stackoverflow.com/users/5351721/') StackOverflow], and #[+externalLink('https://www.linkedin.com/in/sposhea/') LinkedIn].
+  
+  
+  
+  
+  
+  
+  
+  
+  
+

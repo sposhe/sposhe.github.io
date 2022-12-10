@@ -1,0 +1,10 @@
+mixin jsonBreadcrumb(position, name, url)
+  itemListElement
+    at-type ListItem
+    position= position
+    item
+      - let type = (position === 1) ? 'ProfilePage' : 'WebPage'
+      at-type= type
+      at-id= url + '#' + convert(type)
+      url= url
+      name= name  
