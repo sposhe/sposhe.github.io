@@ -46,9 +46,6 @@ abbr:not(.normal) {
 img {
   @extend %h-auto;
 }
-
-
-
 header.home {
   @extend %relative;
   h1 {
@@ -67,15 +64,7 @@ header.home {
       @extend %f5-ns;
     }
   }
-  ul {
-  }
-  li {
-  }
-  p {
-  }
 }
-
-
 .section {
   @extend %relative;
   @extend %bt;
@@ -106,9 +95,6 @@ header.home {
     @extend %w-80-xl;
   }
 }
-
-
-
 .subsection {
   @extend %mv4;
   @extend %mt3-l;
@@ -135,7 +121,6 @@ header.home {
     @extend %w-75-xl;
   }
 }
-
 .lists .subsection-content ul {
   @extend %mv0;
   @extend %columns-2-l;
@@ -144,11 +129,9 @@ header.home {
     @extend %lh-copy;
   }
 }
-
 .cards .subsection-content dl {
   @extend %mv0-ns;
 }
-
 .text .subsection-content p {
   @extend %mt0;
   @extend %lh-copy;
@@ -156,63 +139,6 @@ header.home {
     @extend %mb0-ns;
   }
 }
-
-
-/*
-.section {
-  @extend %relative;
-  @extend %bt;
-  @extend %mt6;
-  @extend %pt3;
-  @extend %flex-ns;
-  h2 {
-    @extend %absolute;
-    @extend %top--1;
-    @extend %pr2;
-    @extend %ma0;
-    @extend %bg-white;
-    @extend %pr0-ns;
-    @extend %relative-ns;
-    @extend %w-third-ns;
-    @extend %mv3-ns;
-    @extend %lh-copy-ns;
-  }
-  .section-content {
-    @extend %w-two-thirds-ns;
-  }
-}
-
-
-
-.subsection {
-  @extend %mv4;
-  @extend %mv3-ns;
-  @extend %flex-ns;
-  h3 {
-    @extend %ma0;
-    @extend %lh-copy;
-    @extend %w-50-ns;
-  }
-  .subsection-content {
-    @extend %w-50-ns;
-  }
-}
-
-.three-columns {
-  @extend %columns-3;
-}
-
-ul.three-columns {
-  @extend %ma0;
-  li {
-    @extend %f5;
-    @extend %lh-copy;
-  }
-}
-*/
-
-
-
 .card {
   @extend %mv3;
   @extend %mt0-ns;
@@ -229,61 +155,3 @@ ul.three-columns {
     @extend %measure-wide-l;
   }
 }
-
-/*
-.section {
-  @extend %bt;
-  @extend %flex;
-  @extend %pt2;
-  @extend %mv6;
-  @extend %gap;
-  h2 {
-    @extend %w-20;
-    @extend %mv3;
-    @extend %lh-copy;
-  }
-  .section-content {
-    @extend %w-80;
-  }
-}
-
-
-
-.subsection {
-  @extend %flex;
-  @extend %gap;
-  &:first-child {
-    @extend %pb2;
-  }
-  &:not(:first-child) {
-    @extend %bt;
-    @extend %pv2;
-  }
-  h3 {
-    @extend %w-25;
-    @extend %lh-copy;
-  }
-  .subsection-content {
-    @extend %w-75;
-  }
-}
-
-
-
-
-
-
-
-.card {
-  @extend %mv3;
-  @extend %pb1;
-  dt {
-    @extend %lh-copy;
-  }
-  dd {
-    @extend %mt1;
-    @extend %lh-copy;
-    @extend %measure-wide;
-  }
-}
-*/

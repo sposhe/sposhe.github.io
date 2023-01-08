@@ -46,9 +46,6 @@ abbr:not(.normal) {
 img {
   %h-auto;
 }
-
-
-
 header.home {
   %relative;
   h1 {
@@ -67,15 +64,7 @@ header.home {
       %f5-ns;
     }
   }
-  ul {
-  }
-  li {
-  }
-  p {
-  }
 }
-
-
 .section {
   %relative;
   %bt;
@@ -106,9 +95,6 @@ header.home {
     %w-80-xl;
   }
 }
-
-
-
 .subsection {
   %mv4;
   %mt3-l;
@@ -135,7 +121,6 @@ header.home {
     %w-75-xl;
   }
 }
-
 .lists .subsection-content ul {
   %mv0;
   %columns-2-l;
@@ -144,11 +129,9 @@ header.home {
     %lh-copy;
   }
 }
-
 .cards .subsection-content dl {
   %mv0-ns;
 }
-
 .text .subsection-content p {
   %mt0;
   %lh-copy;
@@ -156,63 +139,6 @@ header.home {
     %mb0-ns;
   }
 }
-
-
-/*
-.section {
-  %relative;
-  %bt;
-  %mt6;
-  %pt3;
-  %flex-ns;
-  h2 {
-    %absolute;
-    %top--1;
-    %pr2;
-    %ma0;
-    %bg-white;
-    %pr0-ns;
-    %relative-ns;
-    %w-third-ns;
-    %mv3-ns;
-    %lh-copy-ns;
-  }
-  .section-content {
-    %w-two-thirds-ns;
-  }
-}
-
-
-
-.subsection {
-  %mv4;
-  %mv3-ns;
-  %flex-ns;
-  h3 {
-    %ma0;
-    %lh-copy;
-    %w-50-ns;
-  }
-  .subsection-content {
-    %w-50-ns;
-  }
-}
-
-.three-columns {
-  %columns-3;
-}
-
-ul.three-columns {
-  %ma0;
-  li {
-    %f5;
-    %lh-copy;
-  }
-}
-*/
-
-
-
 .card {
   %mv3;
   %mt0-ns;
@@ -229,61 +155,3 @@ ul.three-columns {
     %measure-wide-l;
   }
 }
-
-/*
-.section {
-  %bt;
-  %flex;
-  %pt2;
-  %mv6;
-  %gap;
-  h2 {
-    %w-20;
-    %mv3;
-    %lh-copy;
-  }
-  .section-content {
-    %w-80;
-  }
-}
-
-
-
-.subsection {
-  %flex;
-  %gap;
-  &:first-child {
-    %pb2;
-  }
-  &:not(:first-child) {
-    %bt;
-    %pv2;
-  }
-  h3 {
-    %w-25;
-    %lh-copy;
-  }
-  .subsection-content {
-    %w-75;
-  }
-}
-
-
-
-
-
-
-
-.card {
-  %mv3;
-  %pb1;
-  dt {
-    %lh-copy;
-  }
-  dd {
-    %mt1;
-    %lh-copy;
-    %measure-wide;
-  }
-}
-*/
