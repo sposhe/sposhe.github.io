@@ -1,0 +1,44 @@
+
+
+%black#{$s} {
+  color: black;
+}
+%bg-white#{$s} {
+  background: white;
+}
+%tracked-slight#{$s} {
+  letter-spacing: -0.01em;
+}
+%tracked-close#{$s} {
+  letter-spacing: -0.025em;
+}
+%lh-compressed#{$s} {
+  line-height: 0.92;
+}
+%lh-25#{$s} {
+  line-height: 1.25;
+}
+%columns-2#{$s} {
+  columns: 2;
+}
+%columns-3#{$s} {
+  columns: 3;
+}
+%w-20#{$s} {
+  width: 20%;
+}
+%w-25#{$s} {
+  width: 25%;
+}
+%w-75#{$s} {
+  width: 75%;
+}
+%w-80#{$s} {
+  width: 80%;
+}
+
+
+
+
+
+

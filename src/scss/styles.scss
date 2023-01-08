@@ -1,3 +1,33 @@
-@import 'mixins/_index';
-@import 'vendor/_index';
-@import 'partials/_index';
+@use 'sass:map';
+
+@import 'vendor/_normalize';
+@import 'vendor/_tachyons-static';
+
+$breakpoints: ('-ns': 768, '-l': 1024, '-xl': 1350);
+
+@mixin ns {
+  @media screen and (min-width: #{map.get($breakpoints, '-ns')}px) { @content; }
+}
+@mixin l {
+  @media screen and (min-width: #{map.get($breakpoints, '-l')}px) { @content; }
+}
+@mixin xl {
+  @media screen and (min-width: #{map.get($breakpoints, '-xl')}px) { @content; }
+}
+
+@mixin suffixer {
+  @content('');
+  @each $s, $w in $breakpoints {
+    @media screen and (min-width: #{$w}px) {
+      @content($s);
+    }
+  }
+}
+
+@include suffixer using ($s) {
+  @import 'vendor/_tachyons-responsive';
+  @import 'partials/_custom-responsive';
+}
+
+@import 'partials/_custom-static';
+@import 'partials/_main';

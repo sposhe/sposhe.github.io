@@ -36,7 +36,7 @@ const popExt = (path) => {
 // variables
 const destination = 'docs'
 const pugIndex = paths('src/pug', ['mixins'])
-const sassIndex = paths('src/scss', ['partials', 'vendor', 'mixins'])
+const sassIndex = paths('src/scss', [])
 const locals = {}
 
 // json

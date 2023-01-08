@@ -1,0 +1,31 @@
+%f-hero {
+  font-size: 2rem;
+  @include ns {
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: -0.0275em;
+  }
+  @include l {
+    font-size: 4rem;
+    line-height: 0.92;
+    letter-spacing: -0.0275em;
+  }
+}
+%sc {
+  font-feature-settings: 'smcp';
+}
+%a {
+  &:hover,
+  &:focus {
+    background: #e3e3ff;
+  }
+  &:focus {
+    outline-offset: 0.1em;
+  }
+}
+%top--1 {
+  top: -0.85em;
+  @include l {
+    top: auto;
+  }
+}
