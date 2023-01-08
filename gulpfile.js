@@ -106,7 +106,9 @@ function sassCompile() {
     '!src/scss/**/%*.*'
   ]).pipe( sass({ includePaths: ['node_modules'] }) )
     .pipe( autoprefixer() )
+    .pipe( dest(`${destination}/css`) )
     .pipe( cleanCSS() )
+    .pipe( rename((path) => { path.extname = '.min.css' }) )
     .pipe( dest(`${destination}/css`) )
     .pipe( bsync.reload({ stream: true }) )
 }
