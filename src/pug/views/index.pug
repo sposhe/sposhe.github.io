@@ -22,12 +22,21 @@ append body
         span.sr-only is a 
         | #[abbr(aria-label='UX') UX] designer, strategist, researcher, visual designer, front-end developer, and accessibility advocate.
 
-    +section('Skills').lists
+    +section('About').text
+      +subsection('Philosophy')
+        p Ego has no place in the design process. Fail quickly to succeed quickly. Negative feedback is a gift. Universal design is ethical design. Designers are toolmakers. Meet people where they are. Be a facilitator. Define the problem. Play. There's always more than one solution. Empathy is the key to resonance. You are not your user.
+      +subsection('Motivators')
+        p Tackling complex problems. Building consensus and momentum towards a shared vision. Presenting design accessibly to non-designers. Empowering non-designers to provide confident, actionable feedback.
+        p Shaping project strategies and defining scopes. Leading with universal design and accessibility. Understanding and advocating for users. Writing code. Creating comprehensive Figma component systems.
+        p Refining processes. Sharing skills. Building relationships. Earning trust.
+      +subsection('Background')
+        p 10 years of experience with two boutique web design firms and a full-service digital advertising agency. Higher-ed, museums and archives, non-profits, research and policy, global health, start-ups. #[abbr BFA], graphic design.
+        
+    +section('Hard Skills').lists
       +subsection('Discovery and Research')
         ul
           li stakeholder workshops
           li design thinking exercises
-          li spectrum polling
           li accessibility audits
           li heuristic evaluations
           li analytics audits
@@ -43,28 +52,24 @@ append body
           li sitemaps and #[abbr(aria-label='IA') IA]
           li content and data modeling
           li modular component systems
-          li lo-fi and hi-fi wireframes
-          li interactive prototyping
-          li functional documentation
+          li wireframes and prototyping
+          li functional docs
       +subsection('Visual Design')
         ul
-          li visual design
+          li spectrum polling
           li moodboards
           li styleguides
+          li atomic design
           li figma component systems
-          li atomic design systems
-          li hi-fi layouts
+          li high-fidelity layouts
       +subsection('Front-end Development')
         ul
-          li accessibility and #[abbr(aria-label='ARIA') ARIA]
-          li #[abbr(aria-label='HTML') HTML] and pug
-          li semantic markup
+          li accessibility
+          li semantic #[abbr(aria-label='HTML') HTML] and pug
           li #[abbr(aria-label='CSS') CSS] and sass
-          li javascript and node
+          li javascript / node
           li gulp and express
           li #[abbr(aria-label='SVG') SVG] and canvas
-          li git and github
-          li #[abbr(aria-label='QA') QA] and accessibility
           
     +section('Writing and More').cards
       +subsection('Articles')
@@ -73,6 +78,10 @@ append body
             | Problem-solving, innovation, and brainstorming can be hard. The tricks our brains have evolved to be more efficient can sometimes work against us. We can break those roadblocks using Design Thinking and lateral thinking methods.
           +card('Accessible Text Alternatives for Narrative Animations', 'https://www.savaslabs.com/blog/alt-text-accessible-animations')
             | When animations are a integral part of a site's content, how do you make that content accessible? This article outlines a technique using ARIA roles and JavaScript to provide an equal experience for users that rely on assistive tech.
+      +subsection('Speaking')
+        dl
+          +card('#MW2016: Tackling Complex Web Projects', 'https://mw2016.museumsandtheweb.com/proposal/tackling-complex-web-projects/index.html')
+            | Session for the Museums and the Web Conference on how museum professionals can plan for and navigate navigate large digital projects. 
       +subsection('Figma Plugins')
         dl
           +card('@sposhe/voronoi', 'https://www.figma.com/community/plugin/950202611096034331/%40sposhe%2Fvoronoi')
@@ -90,13 +99,15 @@ append body
           +card('component-indexer', 'https://www.npmjs.com/package/component-indexer')
             | Automatically scans all files in a directory and then references them from a generated index file for easy bulk inclusion elsewhere. Ideal for Pug and Sass.
     
-    +section('Currently').text
+    +section('Current').text
       +subsection('Role')
         p #[abbr.normal(aria-label='UX') UX] Lead at #[+externalLink('https://savaslabs.com') Savas Labs]
       +subsection('Time Zone')
         p Eastern Standard Time (#[abbr.normal(aria-label='GMT') GMT]-5)
       +subsection('Elsewhere')
-        p Find me on #[+externalLink('https://github.com/sposhe') GitHub], #[+externalLink('https://www.figma.com/@sposhe') Figma], #[+externalLink('https://codepen.io/os/') CodePen], #[+externalLink('https://stackoverflow.com/users/5351721/') StackOverflow], and #[+externalLink('https://www.linkedin.com/in/sposhea/') LinkedIn].
+        p #[+externalLink('https://github.com/sposhe') GitHub], #[+externalLink('https://www.figma.com/@sposhe') Figma], #[+externalLink('https://codepen.io/os/') CodePen], #[+externalLink('https://stackoverflow.com/users/5351721/') StackOverflow], and #[+externalLink('https://www.linkedin.com/in/sposhea/') LinkedIn].
+      +subsection('Contact')
+        p #[a(href='https://airtable.com/shrT0ODcEW6Ar6RVT') Send a message] about new opportunities or collaborations.
   
   
   

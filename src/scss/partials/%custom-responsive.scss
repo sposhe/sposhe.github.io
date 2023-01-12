@@ -1,10 +1,11 @@
-
-
 %black#{$s} {
   color: black;
 }
 %bg-white#{$s} {
   background: white;
+}
+%bg-transparent#{$s} {
+  background: transparent;
 }
 %tracked-slight#{$s} {
   letter-spacing: -0.01em;
@@ -19,10 +20,18 @@
   line-height: 1.25;
 }
 %columns-2#{$s} {
-  columns: 2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  > * { flex-basis: calc(50% - 0.5rem); }
 }
 %columns-3#{$s} {
-  columns: 3;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  > * { flex-basis: calc(32% - 0.5rem); }
 }
 %w-20#{$s} {
   width: 20%;

@@ -1,6 +1,9 @@
 :root {
   @extend %sans-serif;
 }
+body {
+  @extend %bg-white;
+}
 main {
   @extend %pa4;
   @extend %pa5-ns;
@@ -84,6 +87,7 @@ header.home {
     @extend %pr2;
     @extend %ma0;
     @extend %bg-white;
+    @extend %bg-transparent-l;
     @extend %pr0-l;
     @extend %relative-l;
     @extend %w-25-l;
@@ -135,6 +139,7 @@ header.home {
 .text .subsection-content p {
   @extend %mt0;
   @extend %lh-copy;
+  @extend %measure-wide;
   &:last-child {
     @extend %mb0-ns;
   }
