@@ -26,6 +26,7 @@ const sassExtendShorthand = require('gulp-sass-extend-shorthand')
 
 // helpers
 const paths = (base, folders) => folders.map(folder => base + '/' + folder)
+const date = () => new Date().toISOString().slice(0, 10)
 const popExt = (path) => {
   let baseArray = path.basename.split('.')
   path.extname = '.' + baseArray.pop()
@@ -37,13 +38,16 @@ const popExt = (path) => {
 const destination = 'docs'
 const pugIndex = paths('src/pug', ['mixins'])
 const sassIndex = paths('src/scss', [])
-const locals = {}
+const locals = {
+  root: 'https://seanoshea.me/',
+  lastmod: date()
+}
 
 // json
 function jsonCompile() {
   return src([
     'src/json/**/*.pug'
-  ]).pipe( pug({ doctype: 'xml' }) )
+  ]).pipe( pug({ locals }) )
     .pipe( rename((path) => { path.extname = '.xml' }) )
     .pipe( xml2json({
       explicitRoot: false,
@@ -133,10 +137,33 @@ function sync() {
   })
 }
 
+// meta
+function sitemapCompile() {
+  return src([
+    'src/meta/sitemap.pug'
+  ]).pipe( pug({ locals , pretty: true }) )
+    .pipe( rename((path) => { path.extname = '.xml' }) )
+    .pipe( dest(destination) )
+}
+function robotsCompile() {
+  return src([
+    'src/meta/robots.txt'
+  ]).pipe( replace(/https:\/\/root\//gm, locals.root) )
+    .pipe( dest(destination) )
+}
+function faviconCompile() {
+  return src([
+    'src/meta/favicon.pug'
+  ]).pipe( pug({ doctype: 'xml', pretty: true }) )
+    .pipe( rename((path) => { path.extname = '.svg' }) )
+    .pipe( dest(destination) )
+}
+
 // exports
+exports.meta    = series(sitemapCompile, robotsCompile, faviconCompile)
 exports.json    = series(jsonCompile)
 exports.pug     = series(jsonCompile, pugIndexer, pugCompile)
 exports.sass    = series(sassShorthand, sassIndexer, sassCompile)
-exports.build   = parallel(exports.json, exports.pug, exports.sass)
+exports.build   = parallel(exports.meta, exports.json, exports.pug, exports.sass)
 exports.watch   = series(jsonWatch, pugWatch, sassWatch)
 exports.default = series(exports.build, exports.watch, sync)

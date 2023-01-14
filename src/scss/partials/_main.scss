@@ -1,4 +1,5 @@
 :root {
+  @extend %black;
   @extend %sans-serif;
 }
 body {
@@ -8,11 +9,14 @@ main {
   @extend %pa4;
   @extend %pa5-ns;
 }
+h1 {
+  @extend %near-black;
+}
 h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   @extend %f4;
-  @extend %f5-ns;
-  @extend %measure;
   @extend %tracked-slight;
+  @extend %measure;
+  @extend %f5-ns;
 }
 h2, h3, h4, h5, h6 {
   @extend %ttl;
@@ -36,34 +40,26 @@ a {
   @extend %black;
   @extend %a;
 }
-figcaption {
-  @extend %f5;
-  @extend %i;
-  @extend %lh-25;
-  @extend %tracked-slight;
-}
 abbr:not(.normal) {
   @extend %ttl;
   @extend %sc;
 }
-img {
-  @extend %h-auto;
-}
 header.home {
   @extend %relative;
   h1 {
-    @extend %mv0;
     @extend %f-hero;
+    @extend %mv0;
     @extend %pv5;
     @extend %pv6-ns;
     @extend %mw7-ns;
     @extend %mw8-l;
     span.name {
-      @extend %absolute;
-      @extend %top-0;
+      @extend %black;
       @extend %f4;
       @extend %fw4;
       @extend %tracked-slight;
+      @extend %absolute;
+      @extend %top-0;
       @extend %f5-ns;
     }
   }
@@ -71,8 +67,8 @@ header.home {
 .section {
   @extend %relative;
   @extend %bt;
-  @extend %pt2;
   @extend %mv5;
+  @extend %pt2;
   @extend %pb4;
   @extend %pt3-ns;
   @extend %flex-l;
@@ -81,17 +77,17 @@ header.home {
     @extend %mt5-ns;
   }
   h2 {
-    @extend %absolute;
     @extend %lh-copy;
+    @extend %absolute;
     @extend %top--1;
-    @extend %pr2;
-    @extend %ma0;
     @extend %bg-white;
     @extend %bg-transparent-l;
-    @extend %pr0-l;
+    @extend %pr2;
+    @extend %ma0;
     @extend %relative-l;
     @extend %w-25-l;
     @extend %mv3-l;
+    @extend %pr0-l;
     @extend %w-20-xl;
   }
   .section-content {
@@ -101,13 +97,13 @@ header.home {
 }
 .subsection {
   @extend %mv4;
-  @extend %mt3-l;
   @extend %flex-ns;
   @extend %pb4-l;
+  @extend %mt3-l;
   @extend %mb1-l;
   &:not(:first-child) {
-    @extend %mt0-l;
     @extend %bt-l;
+    @extend %mt0-l;
     @extend %pt4-l;
   }
   h3 {
@@ -126,9 +122,9 @@ header.home {
   }
 }
 .lists .subsection-content ul {
-  @extend %mv0;
   @extend %columns-2-l;
   @extend %columns-3-xl;
+  @extend %mv0;
   li {
     @extend %lh-copy;
   }
@@ -137,9 +133,9 @@ header.home {
   @extend %mv0-ns;
 }
 .text .subsection-content p {
-  @extend %mt0;
   @extend %lh-copy;
   @extend %measure-wide;
+  @extend %mt0;
   &:last-child {
     @extend %mb0-ns;
   }

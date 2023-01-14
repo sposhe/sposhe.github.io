@@ -1,6 +1,9 @@
 %black#{$s} {
   color: black;
 }
+%near-black#{$s} {
+  color: #222222;
+}
 %bg-white#{$s} {
   background: white;
 }

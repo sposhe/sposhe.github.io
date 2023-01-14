@@ -222,10 +222,6 @@ header.home h1 span.name {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
 }
 
-figcaption {
-  font-style: italic;
-}
-
 li, dd, p, figcaption {
   font-weight: 300;
 }
@@ -236,10 +232,6 @@ header.home h1 span.name {
 
 dt {
   font-weight: 700;
-}
-
-img {
-  height: auto;
 }
 
 .card dt, .card dd, .text .subsection-content p, .lists .subsection-content ul li, .subsection h3, .section h2 {
@@ -335,10 +327,6 @@ abbr:not(.normal), h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
 }
 
-figcaption {
-  font-size: 1rem;
-}
-
 h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   max-width: 30em;
 }
@@ -367,20 +355,20 @@ h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   border: initial;
 }
 
-a {
+header.home h1 span.name, a, :root {
   color: black;
+}
+
+h1 {
+  color: #222222;
 }
 
 .section h2, body {
   background: white;
 }
 
-header.home h1 span.name, figcaption, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
+header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   letter-spacing: -0.01em;
-}
-
-figcaption {
-  line-height: 1.25;
 }
 
 @media screen and (min-width: 768px) {

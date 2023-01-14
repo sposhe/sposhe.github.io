@@ -1,4 +1,5 @@
 :root {
+  %black;
   %sans-serif;
 }
 body {
@@ -8,11 +9,14 @@ main {
   %pa4;
   %pa5-ns;
 }
+h1 {
+  %near-black;
+}
 h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   %f4;
-  %f5-ns;
-  %measure;
   %tracked-slight;
+  %measure;
+  %f5-ns;
 }
 h2, h3, h4, h5, h6 {
   %ttl;
@@ -36,34 +40,26 @@ a {
   %black;
   %a;
 }
-figcaption {
-  %f5;
-  %i;
-  %lh-25;
-  %tracked-slight;
-}
 abbr:not(.normal) {
   %ttl;
   %sc;
 }
-img {
-  %h-auto;
-}
 header.home {
   %relative;
   h1 {
-    %mv0;
     %f-hero;
+    %mv0;
     %pv5;
     %pv6-ns;
     %mw7-ns;
     %mw8-l;
     span.name {
-      %absolute;
-      %top-0;
+      %black;
       %f4;
       %fw4;
       %tracked-slight;
+      %absolute;
+      %top-0;
       %f5-ns;
     }
   }
@@ -71,8 +67,8 @@ header.home {
 .section {
   %relative;
   %bt;
-  %pt2;
   %mv5;
+  %pt2;
   %pb4;
   %pt3-ns;
   %flex-l;
@@ -81,17 +77,17 @@ header.home {
     %mt5-ns;
   }
   h2 {
-    %absolute;
     %lh-copy;
+    %absolute;
     %top--1;
-    %pr2;
-    %ma0;
     %bg-white;
     %bg-transparent-l;
-    %pr0-l;
+    %pr2;
+    %ma0;
     %relative-l;
     %w-25-l;
     %mv3-l;
+    %pr0-l;
     %w-20-xl;
   }
   .section-content {
@@ -101,13 +97,13 @@ header.home {
 }
 .subsection {
   %mv4;
-  %mt3-l;
   %flex-ns;
   %pb4-l;
+  %mt3-l;
   %mb1-l;
   &:not(:first-child) {
-    %mt0-l;
     %bt-l;
+    %mt0-l;
     %pt4-l;
   }
   h3 {
@@ -126,9 +122,9 @@ header.home {
   }
 }
 .lists .subsection-content ul {
-  %mv0;
   %columns-2-l;
   %columns-3-xl;
+  %mv0;
   li {
     %lh-copy;
   }
@@ -137,9 +133,9 @@ header.home {
   %mv0-ns;
 }
 .text .subsection-content p {
-  %mt0;
   %lh-copy;
   %measure-wide;
+  %mt0;
   &:last-child {
     %mb0-ns;
   }
