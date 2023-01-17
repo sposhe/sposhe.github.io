@@ -585,8 +585,6 @@ header.home h1 {
 @media screen and (min-width: 1024px) {
   header.home h1 {
     font-size: 4rem;
-    line-height: 0.92;
-    letter-spacing: -0.0275em;
   }
 }
 
