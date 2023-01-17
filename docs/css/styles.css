@@ -437,9 +437,6 @@ header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   .section {
     display: flex;
   }
-  header.home h1 {
-    max-width: 64rem;
-  }
   .section h2 {
     position: relative;
   }
@@ -585,6 +582,7 @@ header.home h1 {
 @media screen and (min-width: 1024px) {
   header.home h1 {
     font-size: 4rem;
+    max-width: 68rem;
   }
 }
 
