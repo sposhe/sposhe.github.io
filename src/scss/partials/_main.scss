@@ -40,9 +40,11 @@ a {
   @extend %black;
   @extend %a;
 }
-abbr:not(.normal) {
-  @extend %ttl;
+abbr {
   @extend %sc;
+  &.normal {
+    @extend %ffsn;
+  }
 }
 header.home {
   @extend %relative;

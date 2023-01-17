@@ -40,9 +40,11 @@ a {
   %black;
   %a;
 }
-abbr:not(.normal) {
-  %ttl;
+abbr {
   %sc;
+  &.normal {
+    %ffsn;
+  }
 }
 header.home {
   %relative;

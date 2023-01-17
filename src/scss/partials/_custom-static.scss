@@ -10,7 +10,10 @@
   }
 }
 %sc {
-  font-feature-settings: 'smcp';
+  font-feature-settings: 'c2sc';
+}
+%ffsn {
+  font-feature-settings: normal;
 }
 %a {
   &:hover,

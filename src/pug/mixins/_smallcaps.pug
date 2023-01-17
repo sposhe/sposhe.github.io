@@ -1,10 +1,10 @@
 -
-  const abbrs = [ 'UX', 'UI', 'IA', 'ARIA', 'CSS', 'SVG', 'QA' ]
+  const abbrs = [ 'UX', 'UI', 'IA', 'ARIA', 'CSS', 'SVG', 'QA', 'HTML' ]
   const smallcaps = (s) => {
     let words = s.split(' ')
     let output = words.map(word => {
       if (-1 !== abbrs.indexOf(word)) {
-        return `<abbr aria-label='${word}'>${word}</abbr>`
+        return `<abbr>${word}</abbr>`
       } else {
         return word
       }

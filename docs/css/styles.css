@@ -319,7 +319,7 @@ header + .section {
   margin-bottom: 4rem;
 }
 
-abbr:not(.normal), h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   text-transform: lowercase;
 }
 
@@ -588,8 +588,12 @@ header.home h1 {
   }
 }
 
-abbr:not(.normal) {
-  font-feature-settings: "smcp";
+abbr {
+  font-feature-settings: "c2sc";
+}
+
+abbr.normal {
+  font-feature-settings: normal;
 }
 
 a:hover, a:focus {
