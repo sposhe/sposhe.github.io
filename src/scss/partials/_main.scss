@@ -4,6 +4,7 @@
 }
 body {
   @extend %bg-white;
+  @extend %font-smoothing;
 }
 main {
   @extend %pa4;
@@ -16,7 +17,6 @@ h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   @extend %f4;
   @extend %tracked-slight;
   @extend %measure;
-  @extend %f5-ns;
 }
 h2, h3, h4, h5, h6 {
   @extend %ttl;
@@ -58,11 +58,10 @@ header.home {
     span.name {
       @extend %black;
       @extend %f4;
-      @extend %fw4;
+      @extend %fw3;
       @extend %tracked-slight;
       @extend %absolute;
       @extend %top-0;
-      @extend %f5-ns;
     }
   }
 }
@@ -154,7 +153,6 @@ header.home {
   dt, dd {
     @extend %f4;
     @extend %lh-copy;
-    @extend %f5-ns;
     @extend %measure-wide-l;
   }
 }

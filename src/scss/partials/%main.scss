@@ -4,6 +4,7 @@
 }
 body {
   %bg-white;
+  %font-smoothing;
 }
 main {
   %pa4;
@@ -16,7 +17,6 @@ h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   %f4;
   %tracked-slight;
   %measure;
-  %f5-ns;
 }
 h2, h3, h4, h5, h6 {
   %ttl;
@@ -58,11 +58,10 @@ header.home {
     span.name {
       %black;
       %f4;
-      %fw4;
+      %fw3;
       %tracked-slight;
       %absolute;
       %top-0;
-      %f5-ns;
     }
   }
 }
@@ -154,7 +153,6 @@ header.home {
   dt, dd {
     %f4;
     %lh-copy;
-    %f5-ns;
     %measure-wide-l;
   }
 }

@@ -222,12 +222,8 @@ header.home h1 span.name {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
 }
 
-li, dd, p, figcaption {
+header.home h1 span.name, li, dd, p, figcaption {
   font-weight: 300;
-}
-
-header.home h1 span.name {
-  font-weight: 400;
 }
 
 dt {
@@ -403,9 +399,6 @@ header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
   .cards .subsection-content dl {
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .card dt, .card dd, header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
-    font-size: 1rem;
   }
   .subsection .subsection-content, .subsection h3 {
     width: 50%;
@@ -594,6 +587,13 @@ abbr {
 
 abbr.normal {
   font-feature-settings: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 a:hover, a:focus {

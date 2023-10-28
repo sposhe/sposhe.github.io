@@ -15,6 +15,12 @@
 %ffsn {
   font-feature-settings: normal;
 }
+%font-smoothing {
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+}
 %a {
   &:hover,
   &:focus {
